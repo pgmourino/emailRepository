@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+    <changeSet author="admin" id="1">
+        <createTable tableName="email">
+            <column autoIncrement="true" name="emailid" type="INT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="emailfrom" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="emailcc" type="VARCHAR(255)"/>
+            <column name="emailbody" type="VARCHAR(2000)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="state" type="INT"/>
+            <column name="emaildate" type="DATE"/>
+        </createTable>
+        <createSequence sequenceName="email_seq" startValue="1438"></createSequence>
+        <rollback>
+            <dropTable tableName="email"/>
+        </rollback>
+    </changeSet>
+</databaseChangeLog>

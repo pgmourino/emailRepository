@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+    <changeSet author="admin" id="4">
+        <insert tableName="email">
+            <column name="emailid" valueNumeric="1435"/>
+            <column name="emailfrom" value="marcus@gbtec.es"/>
+            <column name="emailbody" value="Body text"/>
+            <column name="state" valueNumeric="1"/>
+        </insert>
+    </changeSet>
+    
+    <changeSet author="admin" id="5">
+        <insert tableName="emailto">
+            <column name="id" valueNumeric="1"/>
+            <column name="codEmail" value="1435"/>
+            <column name="txtEmail" value="andrew@gbtec.es"/>
+        </insert>
+    </changeSet>
+    
+    <changeSet author="admin" id="6">
+        <insert tableName="emailto">
+            <column name="id" valueNumeric="2"/>
+            <column name="codEmail" value="1435"/>
+            <column name="txtEmail" value="peter@gbtec.es"/>
+        </insert>
+    </changeSet>
+    
+    <changeSet author="admin" id="7">
+        <insert tableName="emailcc">
+            <column name="id" valueNumeric="1"/>
+            <column name="codEmail" value="1435"/>
+            <column name="txtEmail" value="carl@gbtec.es"/>
+        </insert>
+    </changeSet>
+    
+    <changeSet author="admin" id="8">
+        <insert tableName="email">
+            <column name="emailid" valueNumeric="1436"/>
+            <column name="emailfrom" value="marcus@gbtec.es"/>
+            <column name="emailbody" value="Body text"/>
+            <column name="state" valueNumeric="1"/>
+        </insert>
+    </changeSet>
+    
+    <changeSet author="admin" id="9">
+        <insert tableName="emailto">
+            <column name="id" valueNumeric="3"/>
+            <column name="codEmail" value="1436"/>
+            <column name="txtEmail" value="rober@gbtec.es"/>
+        </insert>
+    </changeSet>
+    
+    <changeSet author="admin" id="10">
+        <insert tableName="emailto">
+            <column name="id" valueNumeric="4"/>
+            <column name="codEmail" value="1436"/>
+            <column name="txtEmail" value="sam@gbtec.es"/>
+        </insert>
+    </changeSet>
+    
+   <changeSet author="admin" id="11">
+        <insert tableName="emailcc">
+            <column name="id" valueNumeric="3"/>
+            <column name="codEmail" value="1436"/>
+            <column name="txtEmail" value="carl@gbtec.es"/>
+        </insert>
+    </changeSet>
+    
+    <changeSet author="admin" id="12">
+        <insert tableName="emailcc">
+            <column name="id" valueNumeric="4"/>
+            <column name="codEmail" value="1436"/>
+            <column name="txtEmail" value="michael@gbtec.es"/>
+        </insert>
+    </changeSet>
+    
+</databaseChangeLog>
+
