@@ -21,7 +21,7 @@ public class EmailCCRepositoryTest {
     @Autowired
     EmailCCRepository dao;
     
-    private final int totalSize = 4; //Init size of emailsTo preloaded in database 
+    private final int totalSize = 3; //Init size of emailsTo preloaded in database 
     
     @Test
     public void testFindById() {
